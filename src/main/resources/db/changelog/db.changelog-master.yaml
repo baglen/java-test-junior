@@ -5,3 +5,21 @@ databaseChangeLog:
   - include:
       file: migration/V1__migrate_table_product.sql
       relativeToChangelogFile: true
+  - changeSet:
+      id: 2
+      author: Artiom Spac
+  - include:
+      file: migration/V2__migrate_table_users.sql
+      relativeToChangelogFile: true
+  - changeSet:
+      id: 3
+      author: Artiom Spac
+  - include:
+      file: migration/V3__migrate_table_role.sql
+      relativeToChangelogFile: true
+  - changeSet:
+      id: 4
+      author: Artiom Spac
+  - include:
+      file: migration/V4__migrate_table_product_like.sql
+      relativeToChangelogFile: true
